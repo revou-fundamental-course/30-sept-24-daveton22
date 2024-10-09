@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Konversi Suhu C to F</title>
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- font awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Kalkulator Konversi Suhu</h1>
+    </header>
+
+    <main>
+      <section>
+        <!-- Instruksi -->
+        <article>
+          <p>
+            Masukan suhu derajat Celcius (&deg;C) ke kotak dibawah, lalu klik
+            tombol Konversi untuk mendapatkan konversi dalam bentuk Fahrenheit
+            (&deg;F)
+          </p>
+        </article>
+
+        <!-- Form input -->
+        <div class="konversi">
+          <form>
+            <label for="input-suhu" id="label-input-suhu">Celcius </label>
+
+            <br />
+
+            <input type="number" id="input-suhu" placeholder="masukan suhu" />
+          </form>
+
+          <div>
+            <i class="fa-solid fa-arrow-right fa-xl"></i>
+          </div>
+
+          <!-- Hasil Perhitungan -->
+          <form>
+            <div>
+              <label for="hasil-suhu" id="label-hasil-suhu">Fahrenheit</label>
+            </div>
+
+            <input
+              type="text"
+              id="hasil-suhu"
+              readonly
+              placeholder="hasil konversi"
+            />
+          </form>
+        </div>
+
+        <!-- Button konversi -->
+        <div>
+          <button id="convert" class="form-button form-button-submit">
+            Konversi
+          </button>
+          <button id="reset" class="form-button form-button-reset">
+            Reset
+          </button>
+          <button id="reverse" class="form-button form-button-reverse">
+            Reverse
+          </button>
+        </div>
+
+        <!-- cara Kalkulasi -->
+        <div>
+          <div>
+            <label for="how-to-suhu">cara kalkulasi</label>
+          </div>
+          <br />
+
+          <input type="text" id="how-to-suhu" readonly />
+        </div>
+      </section>
+
+      <hr />
+
+      <!-- cara hitung -->
+      <section>
+        <div class="cara-hitung hidden">
+          <header>
+            <h2>Cara konversi Celcius (&deg;C) ke (&deg;F) Fahrenheit</h2>
+          </header>
+
+          <article>
+            <!-- Celcius to Fahrenheit -->
+
+            <p id="how-to">
+              Suhu <span>S</span> dalam derajat Fahrenheit (&deg;F) sama dengan
+              suhu <span>S</span> dalam derajat Celcius (&deg;C) dikalikan 9/5
+              lalu ditambah 32.
+            </p>
+            <p><span>S</span> (&deg;F) = <span>S</span> (&deg;C) x 9/5 + 32</p>
+            <p>atau</p>
+            <p><span>S</span> (&deg;F) = <span>S</span> (&deg;C) x 1.8 + 32</p>
+          </article>
+
+          <header>
+            <h2>Cara konversi (&deg;F) Fahrenheit ke Celcius (&deg;C)</h2>
+          </header>
+          <article>
+            <!-- Fahrenheit to Celcius -->
+            <p id="how-to">
+              Suhu <span>S</span> dalam derajat Celcius (&deg;C) sama dengan
+              suhu <span>S</span> dalam derajat Fahrenheit (&deg;F) dikurangi
+              32, lalu dibagi 9/5.
+            </p>
+            <p>
+              <span>S</span> (&deg;C) = (<span>S</span> (&deg;F) - 32) / (9/5)
+            </p>
+            <p>atau</p>
+            <p>
+              <span>S</span> (&deg;C) = (<span>S</span> (&deg;F) - 32) / 1.8
+            </p>
+          </article>
+        </div>
+        <div class="open-close">lihat cara hitung</div>
+      </section>
+    </main>
+
+    <!-- footer -->
+    <footer>
+      <p>&copy; 2024, Dave far-far</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

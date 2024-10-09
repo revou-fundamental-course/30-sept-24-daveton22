@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap");
+
+:root {
+  --primary-color: #ffd369;
+  --secondary-color: #eeeeee;
+  --tertiary-color: #222831;
+  --quaternary-color: #393e46;
+}
+
+body {
+  margin: 0;
+  font-family: "Afacad Flux", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+  background-color: var(--primary-color);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+}
+
+main {
+  width: 50%;
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--secondary-color);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+
+  border: 2px solid var(--tertiary-color);
+}
+
+span {
+  font-size: 20px;
+  font-family: math;
+  font-style: italic;
+  font-weight: bold;
+}
+
+hr {
+  width: 80%;
+  margin: 20px auto;
+
+  border: 1px solid var(--tertiary-color);
+}
+
+.form-button-submit {
+  background-color: var(--primary-color);
+  color: var(--tertiary-color);
+  font-weight: bold;
+  padding: 10px 10px;
+  border-radius: 8px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+.form-button-reset {
+  background-color: var(--primary-color);
+  color: var(--tertiary-color);
+  font-weight: bold;
+  padding: 10px 10px;
+  border-radius: 8px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+.form-button-reverse {
+  background-color: var(--primary-color);
+  color: var(--tertiary-color);
+  font-weight: bold;
+  padding: 10px 10px;
+  border-radius: 8px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+.form-button {
+  transition: all 0.1s ease-in-out;
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  -ms-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+}
+
+.form-button:hover {
+  background-color: var(--tertiary-color);
+  color: var(--primary-color);
+}
+
+input[type="number"],
+[type="text"] {
+  width: 80%;
+  padding: 10px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid var(--tertiary-color);
+  border-radius: 8px;
+  font-size: 16px;
+  transition: all 0.2 ease-in;
+  -webkit-transition: all 0.2 ease-in;
+  -moz-transition: all 0.2 ease-in;
+  -ms-transition: all 0.2 ease-in;
+  -o-transition: all 0.2 ease-in;
+}
+
+input[type="text"] {
+  cursor: default;
+}
+
+input:focus {
+  outline: none;
+  border: 2px solid var(--primary-color);
+}
+
+#how-to-suhu {
+  height: 50px;
+  width: 60%;
+  margin: auto;
+
+  text-align: center;
+  background-color: white;
+  box-sizing: border-box;
+  border: 2px dashed var(--tertiary-color);
+  border-radius: 8px;
+}
+
+#how-to {
+  width: 80%;
+  margin: auto;
+}
+
+.konversi {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.fa-arrow-right {
+  font-size: 20px;
+  margin-top: 1em;
+}
+
+.hidden {
+  display: none;
+}
+
+.open-close {
+  cursor: pointer;
+  font-style: italic;
+  color: var(--quaternary-color);
+  font-weight: bold;
+}
+
+.open-close:hover {
+  color: var(--tertiary-color);
+}
+
+/* responsive */
+
+@media (max-width: 768px) {
+  body {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  main {
+    width: 90%;
+  }
+
+  .konversi {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  input[type="number"],
+  input[type="text"] {
+    width: 100%;
+  }
+
+  #how-to-suhu {
+    width: 80%;
+  }
+
+  .fa-arrow-right {
+    rotate: 90deg;
+
+    margin-bottom: 1em;
+  }
+
+  .konversi form {
+    text-align: left;
+  }
+}
